@@ -57,7 +57,7 @@ define(
 				},
 				_updateRendering: function (callback) {
 					if (this._contextObj != null) {
-						if(this.bool_b64){
+						if(!this.bool_b64){
 							var changedDate = new Date().getTime();
 							var guid        = this._contextObj._guid;
 							var href        = mx.homeUrl+'file?guid='+guid+'&changedDate='+changedDate;//+'&name='+this._contextObj.get('Name');
@@ -95,9 +95,9 @@ define(
 						}
 					} else {
 						if(this.img_default!=null){
-							if(this.bool_b64){
+							if(!this.bool_b64){
 								var changedDate = new Date().getTime();
-								var href        = this.img_default;
+								var href        = mx.homeUrl+this.img_default;
 								var linkexists	= document.querySelector("link[rel*='icon']")!=null;
 								var link        = document.querySelector("link[rel*='icon']")||document.createElement('link');
 								link.type       = 'image/x-icon';
@@ -119,7 +119,7 @@ define(
 								    xhr.send();
 								}
 								var changedDate = new Date().getTime();
-								var href        = this.img_default;
+								var href        = mx.homeUrl+this.img_default;
 								toDataUrl(href,function(b64){
 									var linkexists	= document.querySelector("link[rel*='icon']")!=null;
 									var link        = document.querySelector("link[rel*='icon']")||document.createElement('link');
