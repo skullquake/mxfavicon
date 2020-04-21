@@ -7392,3 +7392,11 @@ cursor:url(
 .card>.mx-link{
   color:#FFFFFF;
 }
+
+
+.pageheader{
+	border:unset!important;
+	background:#20262f!important;
+}
+
+.region-topbar{border:unset!important;}
