@@ -1,2 +1,2 @@
 # mxfavicon
-[https://mxfavicon-sandbox.mxapps.io](Example)
+[Example](https://mxfavicon-sandbox.mxapps.io)
